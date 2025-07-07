@@ -50,14 +50,14 @@ public class Main
 		Customer customer = new Customer("Hazem Khairat", 55000);
 		Cart cart = new Cart();
 		
-		
+		// shippable_expirable product -> (name, price, quantity, expirationDate, weight)
 		Product cheese = new ExpirableProduct("Cheese", 50, 100, LocalDate.of(2025, 7, 1), 10.15); 
 		
-		// shippable product -> (String name, int price, int quantity, double weight)
+		// shippable_nonExpirable products -> (name, price, quantity, weight)
 		Product tv = new NonExpirableProduct("TV", 2000, 10, 150.10);
 		Product mobile = new NonExpirableProduct("Mobile", 100, 10, 800);
 		
-		// non shippable product -> (String name, int price, int quantity)
+		// non shippable product -> (name, price, quantity)
 		Product scratchCard = new NonExpirableProduct("Scratch Card", 100, 10); 
 
 
